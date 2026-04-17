@@ -44,17 +44,34 @@ pip install -r requirements.txt
 ## Run The Main Pipeline
 
 ```bash
-python main.py --subject S001 --run 2
+python main.py --subjects S001 --runs 2
 ```
 
 Common options:
 
 - `--data-root`: Root dataset path
 - `--output-root`: Output folder (default `outputs`)
+- `--subjects`: Subject tokens (supports lists/ranges, e.g. `S001,S003-S005`)
+- `--runs`: Run tokens (supports lists/ranges, e.g. `1,3-5`)
+- `--parallel`: Enable parallel execution
+- `--max-workers`: Worker count when parallel mode is enabled
 - `--threshold-uv`: ADM threshold
 - `--event-method`: `threshold_refractory`, `sample_to_sample`, or `suppression_recovery`
 - `--l-freq` / `--h-freq`: Band-pass limits
 - `--no-notch`: Disable notch filtering
+
+Examples:
+
+```bash
+# Cartesian product of 5 subjects x 3 runs = 15 jobs
+python main.py --subjects S001-S005 --runs 1-3
+
+# Mixed list + range tokens
+python main.py --subjects S001,S004-S006 --runs 1,3-4
+
+# Optional parallel mode
+python main.py --subjects S001-S010 --runs 1-2 --parallel --max-workers 4
+```
 
 Use built-in help for all options:
 
