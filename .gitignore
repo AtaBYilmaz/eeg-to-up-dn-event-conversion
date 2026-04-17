@@ -1,0 +1,36 @@
+# Python cache and bytecode
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local output artifacts
+outputs/
+*.png
+*.svg
+*.csv
+*.json
+
+# tests
+tests/
+
+# Local EEG datasets (large, user-managed)
+EEG_datasets/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
