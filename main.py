@@ -24,7 +24,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--data-root", type=Path, default=default_cfg.data_root, help="Root EEG data folder")
     parser.add_argument("--output-root", type=Path, default=default_cfg.output_root, help="Output folder")
     parser.add_argument("--subject", default="S001", help="Subject folder (e.g., S001)")
-    parser.add_argument("--run", type=int, default=2, choices=range(1, 15), metavar="[1-14]", help="Run number")
+    parser.add_argument("--run", type=int, default=1, choices=range(1, 15), metavar="[1-14]", help="Run number")
     parser.add_argument("--threshold-uv", type=float, default=default_cfg.adm.threshold_uv, help="ADM threshold in microvolts")
     parser.add_argument("--refractory-ms", type=float, default=default_cfg.adm.refractory_ms, help="ADM refractory in milliseconds")
     parser.add_argument("--suppression-ms", type=float, default=default_cfg.adm.suppression_ms, help="Post-event suppression window in milliseconds")

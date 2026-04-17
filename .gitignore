@@ -16,12 +16,12 @@ env/
 .coverage
 htmlcov/
 
-# Local output artifacts
-outputs/
-*.png
-*.svg
-*.csv
-*.json
+# # Local output artifacts
+# outputs/
+# *.png
+# *.svg
+# *.csv
+# *.json
 
 # tests
 tests/

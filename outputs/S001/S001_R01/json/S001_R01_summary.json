@@ -1,0 +1,51 @@
+{
+  "subject": "S001",
+  "run": 1,
+  "run_description": "Baseline, eyes open",
+  "input_file": "EEG_datasets\\EEG-Dataset-for-ADHD\\S001\\S001R01.edf",
+  "dataset": {
+    "dataset_id": "default",
+    "dataset_name": "Default metadata",
+    "requested_data_root": "EEG_datasets\\EEG-Dataset-for-ADHD",
+    "resolved_edf_root": "EEG_datasets\\EEG-Dataset-for-ADHD"
+  },
+  "qc": {
+    "subject": "S001",
+    "run": 1,
+    "run_description": "Baseline, eyes open",
+    "n_channels": 19,
+    "sampling_rate_hz": 128.0,
+    "duration_s": 154.9921875,
+    "has_nan": false,
+    "signal_min_uv": -4029.3233184454907,
+    "signal_max_uv": 4326.98942022359,
+    "signal_std_uv": 234.36682854547865,
+    "n_annotations": 2
+  },
+  "adm_summary": {
+    "n_events_total": 4033,
+    "n_up": 2031,
+    "n_dn": 2002,
+    "up_dn_ratio": 1.0144855144855145,
+    "threshold_uv": 400.0,
+    "refractory_ms": 25.0,
+    "suppression_ms": 25.0,
+    "recovery_tc_ms": 150.0,
+    "post_event_gain": 0.25,
+    "event_method": "suppression_recovery"
+  },
+  "n_annotation_events": 2,
+  "config": {
+    "bandpass_low_hz": 1.0,
+    "bandpass_high_hz": 40.0,
+    "notch_hz": 60.0,
+    "apply_notch": true,
+    "rereference": "average",
+    "threshold_uv": 400.0,
+    "refractory_ms": 25.0,
+    "suppression_ms": 25.0,
+    "recovery_tc_ms": 150.0,
+    "post_event_gain": 0.25,
+    "event_method": "suppression_recovery"
+  }
+}
